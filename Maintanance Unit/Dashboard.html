@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width,
+                   initial-scale=1.0">
+ 
+    <link rel="stylesheet"
+          href="Dashboard.css">
+          <script>;
+            function selectNavbar(params) {
+                switch (params) {
+                    case 1:
+                        op1.classList.add("option1");
+                        op2.classList.remove("option1");
+                        op4.classList.remove("option1");
+                        document.getElementById("frame").src="Inbox.html";
+                        break;
+                        case 2:
+                        op2.classList.add("option1");
+                        op1.classList.remove("option1");
+                        op4.classList.remove("option1");
+                        document.getElementById("frame").src="adminInbox.php";
+                        break;
+                        case 4:
+                        op4.classList.add("option1");
+                        op2.classList.remove("option1");
+                        op1.classList.remove("option1");
+                        window.location.assign("home.html")
+                        break;
+                
+                    default:
+                        break;
+                }
+            }
+          </script>
+</head>
+ 
+<body>
+   
+<header>
+<h1 style="text-align:center">Mantenance Unit University of Vavuniya</h1>
+</header>
+ 
+    <div class="main-container">
+        <div class="navcontainer">
+            <nav class="nav">
+                <div class="nav-upper-options">
+                    <div id="op1" onclick="selectNavbar(1)" class="nav-option">
+                        <img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20221210182148/Untitled-design-(29).png"
+                            class="nav-img"
+                            alt="dashboard">
+                        <h3> Dashboard</h3>
+                    </div>
+ 
+                    <div id="op2" onclick="selectNavbar(2)" class="option2 nav-option">
+                        <h3> Inbox box</h3>
+                    </div>
+ 
+
+                    <div id="op4" onclick="selectNavbar(4)" class="nav-option logout">
+                        <h3>Logout</h3>
+                    </div>
+ 
+                </div>
+            </nav>
+        </div>
+        <div class="main"> 
+            <iframe id="frame" src="inbox.html" frameborder="0"></iframe>
+        </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<html>
+<head>
+<link href="adminsend.css" rel="stylesheet">
+<title>UOV Maintanance unit</title>
+<link href="Image/logo.png" rel="icon">
+</head>
+<body>
+<section id="contact" class="container">
+        <div class="div-contact">
+          <h2 style="color:white;">Confirmation Form</h2>
+  </div>
+          <form class="form" method="POST" action="sendMsgAdmin.php"> 
+             <label class="form-label">
+            Request Id:
+            <input type="text" name="reqid" required class="form-input"/>
+            </label>
+
+              <label class="form-label">
+              User name:
+              <input type="text" name="user_name" required class="form-input"/>
+              </label>
+              <label class="form-label">
+                Requested Work<input type="text" name="requestedWork" required class="form-input"/>   
+              </label>
+			  
+			 <p class="form-label">About Confirmation: </p>
+			 <label>
+				<input name="Confirmation" type="radio" value=1 >Accept</label>
+				<label style="margin-right:100px">
+				<input name="Confirmation" type="radio" value=0>Not Accept</label> 
+			  
+              <div>
+			  <button type="submit" name="submit"  class="s1">Send</button>
+              </div>
+            
+          </form>
+      </section>
+	  </body>
+	  </html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>UOV Maintanance unit</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+#id1{
+
+	position:absolute;
+	top:5%;
+}
+</style>
+
+<link rel="stylesheet" type="text/css" href="#">
+<link rel="stylesheet" type="text/css" href="request.css">
+<link rel="stylesheet" type="text/css" href="userhome.css">
+<link href="Image/logo.png" rel="icon">
+<meta name="robots" content="noindex, follow">
+</head>
+<body>
+ </head>
+ <body>
+ <div class="header" >
+        <div class="nav-menu">
+            <div class="menu" id="id1">
+                <ul>
+                    <li><a href="userhome.html" >Homepage</a></li>
+                    <li><a href="Request.html">Request</a></li>
+                    <li><a href="userInbox.php">Inbox</a></li>
+                    <li><a href="home.html">Log out</a></li>
+                    
+                </ul>
+            </div>
+		</div>   
+<div class="container-contact100">
+<div class="wrap-contact100">
+<form class="contact100-form validate-form" method="POST" action="sendMsg.php">
+<span class="contact100-form-title">
+<h2>Request Form</h2>
+</span>
+<div class="wrap-input100 validate-input">
+    <span class="label-input100">Request Id: </span>
+    <input class="input100" type="text" name="reqid" placeholder="request id">
+    <span class="focus-input100"></span>
+    </div>
+
+<div class="wrap-input100 validate-input" data-validate="Name is required">
+<span class="label-input100">Your Name</span>
+<input class="input100" type="text" name="name" placeholder="Enter your name">
+<span class="focus-input100"></span>
+</div>
+<div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+<span class="label-input100">Email</span>
+<input class="input100" type="text" name="email" placeholder="Enter your email addess">
+<span class="focus-input100"></span>
+</div>
+<div class="wrap-input100 input100-select">
+<span class="label-input100">Choose Your Faculty</span>
+<div>
+<select class="selection-2" name="faculty">
+<option>Faculty of Technological Studies</option>
+<option>Faculty of Business Studies</option>
+<option>Faculty of Applied Science</option>
+</select>
+</div>
+<span class="focus-input100"></span>
+</div>
+<div class="wrap-input100 input100-select">
+<span class="label-input100">Choose Your Requrement</span>
+<div>
+<select class="selection-2" name="work">
+<option>Electrical Work</option>
+<option>Mason Work</option>
+<option>Carpenter Work</option>
+<option>Plumber Works</option>
+</select>
+</div>
+<span class="focus-input100"></span>
+</div>
+<div class="wrap-input100 validate-input" data-validate="Message is required">
+<span class="label-input100">Describe Your Requirement</span>
+<textarea class="input100" name="massege" placeholder="Type here..."></textarea>
+<span class="focus-input100"></span>
+</div>
+<div class="container-contact100-form-btn">
+<div class="wrap-contact100-form-btn">
+<div class="contact100-form-bgbtn"></div>
+<button class="contact100-form-btn">
+<span>
+Submit
+<i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+</span>
+</button>
+</div>
+</div>
+</form>
+</div>
+</div>
+
+</body>
+</html>

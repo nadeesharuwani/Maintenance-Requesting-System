@@ -1,0 +1,85 @@
+
+body
+{
+	background-image:url("Image/uslogin.jpg");
+}
+.form {
+  font-size: 16px;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.form * {
+  box-sizing: border-box;
+  line-height: 1.8;
+  
+  
+}
+
+.form-label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  padding: 10px 0;
+}
+
+.form-label > * {
+  align-self: flex-start;
+}
+.form-input {
+  -webkit-appearence: none;
+  
+  width: 100%;
+/*   max-width: 425px; */
+  
+  /*Fix for Safari/ios date fields*/
+  min-height: calc(0.9em + (0.8em*2) + 0.6em);
+  padding: 0.8em;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  
+  outline: none;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  background: #f9f9f9;
+/*   transition: outline 0.15s, ease-in-out 0.15s, box-shadow 0.15s; */
+  transition: outline 0.15s;
+}
+#t1 {
+  -moz-tab-size: 4; /* Firefox */
+  tab-size: 4;
+}
+.form{
+    background-color:rgb(218, 223, 224);
+    margin: 0 auto;
+    width: 50%;
+  }
+.form-input:focus {
+  outline: 4px solid #c6c6c6;
+}
+.form-input::placeholder {
+  color: #bbbbbb;
+}
+.container {
+  padding: 1rem 3rem;
+  margin: 0 auto;
+  
+}
+.s1{
+  margin: 20px;
+	position:relative;
+	left:100px;
+	width:200px;
+	height:50px;
+	border-radius:50px;
+	background-color:white;
+  }
+button:hover{
+	background-color:green;
+}
+.div-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+  
